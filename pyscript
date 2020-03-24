@@ -9,7 +9,7 @@
             self.send_header('Content-type','text/html')
             self.end_headers()
             # Send the html message
-            self.wfile.write("transfer +563700000000")
+            self.wfile.write("transfer +1234567700000000")
 
             return
 ...
