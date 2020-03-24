@@ -10,10 +10,13 @@
             self.end_headers()
             # Send the html message
             self.wfile.write("transfer +563700000000")
+
             return
 ...
 try:
     #Create a web server and define the handler to manage the
     #incoming request
     server = HTTPServer(('', PORT_NUMBER), myHandler)
+
     print('Started httpserver on port %s' % PORT_NUMBER)
+
